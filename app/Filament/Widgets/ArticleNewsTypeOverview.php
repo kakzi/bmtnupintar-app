@@ -11,8 +11,8 @@ class ArticleNewsTypeOverview extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('Cats', ArticleNews::query()->count()),
-            Stat::make('Dogs', ArticleNews::query()->count())
+            // Stat::make('Cats', ArticleNews::query()->count()),
+            // Stat::make('Dogs', ArticleNews::query()->count())
         ];
     }
 }
