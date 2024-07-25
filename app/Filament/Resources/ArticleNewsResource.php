@@ -69,6 +69,12 @@ class ArticleNewsResource extends Resource
                         'not_featured' => 'Not Featured'
                         ])
                     ->required(),
+                Select::make('is_featured')
+                    ->options([
+                        'featured'=> 'Featured', 
+                        'not_featured' => 'Not Featured'
+                        ])
+                    ->required(),
                 
                 RichEditor::make('content')
                     ->toolbarButtons([
