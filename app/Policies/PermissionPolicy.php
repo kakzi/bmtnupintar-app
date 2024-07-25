@@ -13,10 +13,11 @@ class PermissionPolicy
      */
     public function viewAny(User $user): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 
     /**
@@ -24,10 +25,11 @@ class PermissionPolicy
      */
     public function view(User $user, Permission $permission): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 
     /**
@@ -35,10 +37,11 @@ class PermissionPolicy
      */
     public function create(User $user): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 
     /**
@@ -46,10 +49,11 @@ class PermissionPolicy
      */
     public function update(User $user, Permission $permission): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 
     /**
@@ -57,10 +61,11 @@ class PermissionPolicy
      */
     public function delete(User $user, Permission $permission): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 
     /**
@@ -68,10 +73,11 @@ class PermissionPolicy
      */
     public function restore(User $user, Permission $permission): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 
     /**
@@ -79,9 +85,10 @@ class PermissionPolicy
      */
     public function forceDelete(User $user, Permission $permission): bool
     {
-        if($user->can('permissions'))
-            return true;
-        else 
-            return false;
+        return true;
+        // if($user->can('permissions'))
+        //     return true;
+        // else 
+        //     return false;
     }
 }

@@ -13,10 +13,11 @@ class RolePolicy
      */
     public function viewAny(User $user): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 
     /**
@@ -24,10 +25,11 @@ class RolePolicy
      */
     public function view(User $user, Role $role): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 
     /**
@@ -35,10 +37,11 @@ class RolePolicy
      */
     public function create(User $user): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 
     /**
@@ -46,10 +49,11 @@ class RolePolicy
      */
     public function update(User $user, Role $role): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 
     /**
@@ -57,10 +61,11 @@ class RolePolicy
      */
     public function delete(User $user, Role $role): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 
     /**
@@ -68,10 +73,11 @@ class RolePolicy
      */
     public function restore(User $user, Role $role): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 
     /**
@@ -79,9 +85,10 @@ class RolePolicy
      */
     public function forceDelete(User $user, Role $role): bool
     {
-        if($user->can('roles'))
-            return true;
-        else 
-            return false;
+        // if($user->can('roles'))
+        //     return true;
+        // else 
+        //     return false;
+        return true;
     }
 }
