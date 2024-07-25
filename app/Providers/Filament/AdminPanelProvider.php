@@ -127,8 +127,8 @@ class AdminPanelProvider extends PanelProvider
                                         'filament.admin.resources.roles.create',
                                         'filament.admin.resources.roles.view',
                                     ]))
-                                ->url(fn() : string => '/admin/roles')
-                                ->visible(fn (): bool => auth()->user()->can('roles')),
+                                ->url(fn() : string => '/admin/roles'),
+                                // ->visible(fn (): bool => auth()->user()->can('roles')),
                             NavigationItem::make('Permission')
                                 ->label('Permission')
                                 ->icon('heroicon-o-lock-closed')
@@ -139,8 +139,8 @@ class AdminPanelProvider extends PanelProvider
                                         'filament.admin.resources.permissions.create',
                                         'filament.admin.resources.permissions.view',
                                     ]))
-                                ->url(fn() : string => '/admin/permissions')
-                                ->visible(fn (): bool => auth()->user()->can('permissions')),
+                                ->url(fn() : string => '/admin/permissions'),
+                                // ->visible(fn (): bool => auth()->user()->can('permissions')),
                         ]),
                 ]);
             });
